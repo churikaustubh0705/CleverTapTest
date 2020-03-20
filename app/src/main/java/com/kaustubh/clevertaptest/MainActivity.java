@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 prodViewedAction.put("Product ID", 1);
                 prodViewedAction.put("Product Image", "https://d35fo82fjcw0y8.cloudfront.net/2018/07/26020307/customer-success-clevertap.jpg");
                 prodViewedAction.put("Product Name", "CleverTap");
+                prodViewedAction.put("Email", "dk+churikaustubh@gmail.com");
 
                 clevertapDefaultInstance.pushEvent("Product viewed", prodViewedAction);
             }
