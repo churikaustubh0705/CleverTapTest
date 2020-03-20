@@ -30,7 +30,12 @@ public class MainActivity extends AppCompatActivity {
         btn_push.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clevertapDefaultInstance.pushEvent("Product viewed");
+                HashMap<String, Object> prodViewedAction = new HashMap<String, Object>();
+                prodViewedAction.put("Product ID", 1);
+                prodViewedAction.put("Product Image", "https://d35fo82fjcw0y8.cloudfront.net/2018/07/26020307/customer-success-clevertap.jpg");
+                prodViewedAction.put("Product Name", "CleverTap");
+
+                clevertapDefaultInstance.pushEvent("Product viewed", prodViewedAction);
             }
         });
     }
